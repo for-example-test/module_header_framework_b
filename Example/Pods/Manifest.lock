@@ -1,0 +1,23 @@
+PODS:
+  - module_header_framework_b (0.1.0):
+    - module_header_source_a
+  - module_header_source_a (0.1.0)
+
+DEPENDENCIES:
+  - module_header_framework_b (from `../`)
+
+SPEC REPOS:
+  https://github.com/for-example-test/PrivateSpecRepo.git:
+    - module_header_source_a
+
+EXTERNAL SOURCES:
+  module_header_framework_b:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  module_header_framework_b: de47e84b23ccdde6329c93032c1cfaaeacfe2c98
+  module_header_source_a: 26c0dd4f8ef544feb8bc9127508e81eaae6f3172
+
+PODFILE CHECKSUM: 88df6895014a5144ecfcdd76f53e89898586c902
+
+COCOAPODS: 1.6.1

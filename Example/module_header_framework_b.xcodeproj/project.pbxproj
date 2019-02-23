@@ -17,7 +17,7 @@
 
 /* Begin PBXFileReference section */
 		0E994A843747038A1F44BA6E /* Pods_module_header_framework_b_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_module_header_framework_b_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C9218B034E9490CFEF6C0AC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1C9218B034E9490CFEF6C0AC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -28,8 +28,8 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		B267081F65818065A3BE8772 /* Pods-module_header_framework_b_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-module_header_framework_b_Tests.release.xcconfig"; path = "Target Support Files/Pods-module_header_framework_b_Tests/Pods-module_header_framework_b_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		BB1D4317CB2735BE5DD67045 /* module_header_framework_b.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = module_header_framework_b.podspec; path = ../module_header_framework_b.podspec; sourceTree = "<group>"; };
-		EF34D409A968EE471D72A9F0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BB1D4317CB2735BE5DD67045 /* module_header_framework_b.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = module_header_framework_b.podspec; path = ../module_header_framework_b.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EF34D409A968EE471D72A9F0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F8EB82DFA10EDFBEBD43E561 /* Pods-module_header_framework_b_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-module_header_framework_b_Tests.debug.xcconfig"; path = "Target Support Files/Pods-module_header_framework_b_Tests/Pods-module_header_framework_b_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +54,6 @@
 				F8EB82DFA10EDFBEBD43E561 /* Pods-module_header_framework_b_Tests.debug.xcconfig */,
 				B267081F65818065A3BE8772 /* Pods-module_header_framework_b_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -195,12 +194,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-module_header_framework_b_Tests/Pods-module_header_framework_b_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/module_header_framework_b/module_header_framework_b.framework",
+				"${BUILT_PRODUCTS_DIR}/module_header_source_a/module_header_source_a.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/module_header_framework_b.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/module_header_source_a.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

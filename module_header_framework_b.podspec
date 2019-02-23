@@ -25,18 +25,21 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'tripleCC' => 'triplec.linux@gmail.com' }
-  s.source           = { :git => 'https://github.com/tripleCC/module_header_framework_b.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/for-example-test/module_header_framework_b.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'module_header_framework_b/Classes/**/*'
-  
+  s.dependency 'module_header_source_a'
+  s.vendored_frameworks = 'module_header_framework_b.framework'
+  s.source_files = 'module_header_framework_b.framework/Versions/A/Headers/*.h'
+  s.public_header_files = 'module_header_framework_b.framework/Versions/A/Headers/*.h'
   # s.resource_bundles = {
   #   'module_header_framework_b' => ['module_header_framework_b/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  
 end

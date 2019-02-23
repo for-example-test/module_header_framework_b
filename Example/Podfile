@@ -1,3 +1,5 @@
+source 'https://github.com/for-example-test/PrivateSpecRepo.git'
+
 use_frameworks!
 target 'module_header_framework_b_Tests' do
   pod 'module_header_framework_b', :path => '../'

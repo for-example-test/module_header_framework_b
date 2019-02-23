@@ -1,0 +1,27 @@
+{
+  "name": "module_header_framework_b",
+  "version": "0.1.0",
+  "summary": "A short description of module_header_framework_b.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/tripleCC/module_header_framework_b",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "tripleCC": "triplec.linux@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/for-example-test/module_header_framework_b.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "module_header_framework_b/Classes/**/*",
+  "dependencies": {
+    "module_header_source_a": [
+
+    ]
+  }
+}
