@@ -1,0 +1,6 @@
+use_frameworks!
+target 'module_header_framework_b_Tests' do
+  pod 'module_header_framework_b', :path => '../'
+  
+  
+end
