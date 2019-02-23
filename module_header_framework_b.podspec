@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'module_header_framework_b'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of module_header_framework_b.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'module_header_framework_b/Classes/**/*'
+  #s.source_files = 'module_header_framework_b/Classes/**/*'
   s.dependency 'module_header_source_a'
   s.vendored_frameworks = 'module_header_framework_b.framework'
   s.source_files = 'module_header_framework_b.framework/Versions/A/Headers/*.h'
